@@ -1,0 +1,67 @@
+*
+{
+    box-sizing: border-box;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.container
+{
+    padding: 10px;
+    border: 2px solid rgb(80, 61, 61);
+    width:  28%;
+    background-color: rgb(195, 196, 183);
+    margin-left: auto;
+    margin-right: auto;   
+    font-size: 14px;
+}
+
+textarea, .container
+{
+    font-family: sans-serif;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.gen-container
+{
+    background-color: white;
+    padding: 3px;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, textarea, select
+{
+    width: 100%;
+}
+
+[type="radio"], [type="checkbox"]
+{
+    width: auto;
+}
+
+[for*="male"], [for="agree"]
+{
+    display: inline;
+}
+
+[type="submit"]
+{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 4px;
+    letter-spacing: 1px;
+}

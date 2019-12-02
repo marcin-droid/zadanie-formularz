@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie - formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="container">
+            <h2>Zapisz się na szkolenie!</h2>
+            <form action="https://formspree.io/marcin_koziol@outlook.com" method="POST">
+                <label>Imię: <input type="text" name="name"></label>
+                <label>Nazwisko: <input type="text" name="last-name"></label>
+                <label>E-mail: <input type="email" name="email"></label>
+                <label>Telefon: <input type="number" name="phone"></label>
+                <label>Miasto: <select name="city">
+                    <option value="krk">Kraków</option>
+                    <option value="wwa">Warszawa</option>
+                    <option value="gd">Gdańsk</option>
+                </select></label>
+                <p>Płeć:</p>
+                <div class="gen-container">
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Mężczyzna</label><br>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Kobieta</label>
+                </div>
+                <br>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label><br><br>
+                <label>Uwagi: <textarea name="msg"></textarea></label>
+                <input type="submit" name="submit">
+            </form>
+        </div>
+</body>
+</html>
